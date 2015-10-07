@@ -58,7 +58,6 @@ h1 {
 }
 
 #login form{
-  //background:#f0f0f0;
   padding: 20px 20px;
 }
 
@@ -75,9 +74,8 @@ input[type="email"], input[type="password"]{
   color:#555;
 }
 
-input[type="submit"]{
+.login-button{
   width:100%;
-  //background: #3399cc;
   background: transparent;
   border:0;
   padding:4%;
@@ -89,6 +87,6 @@ input[type="submit"]{
   border: 1px solid rgba(255,255,255,.2);
 }
 
-input[type="submit"]:hover{
-  background-color: #D81E5B;;
+.login-button:hover{
+  background-color: #D81E5B;
 }
