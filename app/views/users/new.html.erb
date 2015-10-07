@@ -10,31 +10,25 @@
   </div>
 </nav>
 
-<!-- navigation link for users -->
-<section class="introduction-banner"> 
-  <div class="button-links"> 
-    <%= link_to 'Register', new_user_path, class: "register-button" %> 
-    <%= link_to 'Sign In', login_path, class: "signin-button" %> 
-  </div> 
-</section>
+<!-- register form -->
+<section class="register-form"> 
+  <div class="col s12">
+  
+    <%= form_for @user do |f| %> 
 
-<!-- content photos -->
-<div class="row"> 
-  <div id="page-content"> 
-  <h4 class="content-text">Find isolated glute exercises that gives results</h4>
-    <div class="col s4"> 
-      <img class="content-photo" src="/images/fit.jpg"> 
-    </div>
+      <%= f.text_field :email, :placeholder => "email", class: "sign-input" %> 
 
-    <div class="col s4"> 
-       <img class="content-photo" src="/images/color-glute.jpg">
-    </div> 
+      <%= f.text_field :name, :placeholder => "name", class: "sign-input" %> 
 
-    <div class="col s4"> 
-       <img class="content-photo" src="/images/dumbell-girl.jpg">
-    </div>
-  </div> 
-</div>
+      <%= f.password_field :password, :placeholder => "password", class: "sign-input" %> 
+
+      <%= f.password_field :password_confirmation, :placeholder => "password confirmation", class: "sign-input" %> 
+
+    <% end %> 
+  
+  </div>
+
+</section> 
 
 <!-- footer content -->
 <footer class="page-footer black">
