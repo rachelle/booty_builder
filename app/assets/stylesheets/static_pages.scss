@@ -11,6 +11,16 @@ button {
   pointer: cursor; 
 }
 
+.content-text {
+  text-align: center; 
+}
+
+.content-photo {
+  width: 400px; 
+  height: 380px;
+  padding-left: 10px;
+}
+
 .button-links { 
  padding: 0 0.938rem; 
  margin: 0 auto; 
@@ -65,4 +75,8 @@ button {
   -o-background-size: cover;
   background-size: cover;
   height: 600px;
+}
+
+#page-content {
+  margin-left: 45px;
 }

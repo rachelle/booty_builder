@@ -2,44 +2,40 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-body { 
-  background: url("https://download.unsplash.com/photo-1421977870504-378093748ae6") no-repeat center center fixed; 
+h1 {
+  text-align: center;
+  line-height: 200px;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  color: #FFF;
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 50px;
+  -webkit-animation: text-fade 1.5s;
+}
+
+.tagline{
+  text-align: center;
+  line-height: 200px;
+  margin: auto;
+  position: absolute;
+  top: 61%;
+  width: 100%;
+  color: #FFF;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  text-overflow: elipsis;
+  -webkit-animation: text-fade 2.5s;
+}
+
+.overlay{
+  background: url("/images/glutes.jpg") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
-
-
-h1 {
-    text-align: center;
-    line-height: 200px;
-    margin: auto;
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    color: #FFF;
-    display: block;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 50px;
-    -webkit-animation: text-fade 1.5s;
-}
-
-.tagline{
-    text-align: center;
-    line-height: 200px;
-    margin: auto;
-    position: absolute;
-    top: 61%;
-    width: 100%;
-    color: #FFF;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 15px;
-    text-overflow: elipsis;
-    -webkit-animation: text-fade 2.5s;
-}
-
-.overlay{
   position: absolute;
   top:0;
   left:0;
