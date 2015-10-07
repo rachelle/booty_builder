@@ -1,5 +1,6 @@
 class PhotosController < ApplicationController
   
+  before_action :set_photo, only: [:show, :edit, :update, :destroy]
 
   def index
     @photos = Photo.all
@@ -19,6 +20,10 @@ class PhotosController < ApplicationController
   end
 
   def show
+    # to have comments show in photo model 
+    @comments     = @photo.comments.order('created_at DESC')
+    @comment      = Comment.new
+    @comment.user = current_user
   end
 
   def edit
