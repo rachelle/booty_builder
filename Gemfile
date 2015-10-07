@@ -29,6 +29,9 @@ gem 'bcrypt', '~> 3.1.7'
 # Materialize Sass
 gem 'materialize-sass'
 
+# paperclip
+gem 'paperclip', '~> 4.3'
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 

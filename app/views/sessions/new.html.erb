@@ -4,7 +4,8 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
   </head>
 <body>
-<div class = "image overlay">
+<!-- login background image -->
+<div class="image overlay">
   
   <!-- navigation bar -->
   <nav>
@@ -23,6 +24,7 @@
 
   <!-- Login Form -->
   <div id="login"> 
+    <h3 class="login-text">Login</h3>
     <%= form_tag sessions_path do %> 
       <%= label_tag :email %> 
       <%= text_field_tag :email, params[:email] %> 
@@ -30,13 +32,11 @@
       <%= text_field_tag :password, params[:password] %> 
 
       <%= submit_tag "Login", class: "login-button" %> 
-  </div>
+
     <% end %> 
-  </div> 
-</div>
-     
+  </div>
+
+</div> <!-- end image-overlay -->
+
 </body>
 </html>
-
-
-

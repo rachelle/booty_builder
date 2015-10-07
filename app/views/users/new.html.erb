@@ -10,29 +10,37 @@
   </div>
 </nav>
 
+<!-- register banner -->
+<div id="register-image">
+  <img class="register-banner" src="/images/yoga_pants.jpg">
+</div>
+
 <!-- register form -->
 <div class="register-form"> 
-  <div class="log-form z-depth-2">
-    <div class="col s12">
+  <div class="log-form z-depth-1">
+    <div class="row">
+      <div class="col s12">
+
       <h3 class="register-text">Register</h3>
   
-      <%= form_for @user do |f| %> 
+        <%= form_for @user do |f| %> 
 
-        <%= f.text_field :email, :placeholder => "email", class: "sign-input" %> 
+          <%= f.text_field :email, :placeholder => "email", class: "sign-input" %> 
 
-        <%= f.text_field :name, :placeholder => "name", class: "sign-input" %> 
+          <%= f.text_field :name, :placeholder => "name", class: "sign-input" %> 
 
-        <%= f.password_field :password, :placeholder => "password", class: "sign-input" %> 
+          <%= f.password_field :password, :placeholder => "password", class: "sign-input" %> 
 
-        <%= f.password_field :password_confirmation, :placeholder => "password confirmation", class: "sign-input" %>
+          <%= f.password_field :password, :placeholder => "password confirmation", class: "sign-input" %>
 
-        <%= f.submit "login", class: "login-button" %> 
+          <%= f.submit "login", class: "register-button" %> 
 
-      <% end %> 
+        <% end %> 
   
+      </div>
     </div>
-  </div>
-</div> 
+  </div> 
+</div>
 
 <!-- footer content -->
 <footer class="page-footer black">
