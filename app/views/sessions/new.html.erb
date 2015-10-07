@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title>Splash Page Demo</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+   </head>
+  <body>
+  <div class = "image overlay">
+    <h1 id="site-title">Welcome Back.</h1>
+  
+    <!--Log-in Form-->
+ 
+      
+
+<div id="login"> 
+  <%= form_tag sessions_path do %> 
+    <%= label_tag :email %> 
+    <%= text_field_tag :email, params[:email] %> 
+    <%= label_tag :password %> 
+    <%= text_field_tag :password, params[:password] %> 
+    <%= submit_tag "Login", class: "login-button" %> 
+  <% end %> 
+</div> 
+     </div>
+    </div>
+  </body>
+</html>
+
+
+

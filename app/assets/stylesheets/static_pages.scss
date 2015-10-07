@@ -1,3 +1,68 @@
 // Place all the styles related to the static_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+section { 
+ display: block;
+}
+
+button { 
+  overflow: visible; 
+  pointer: cursor; 
+}
+
+.button-links { 
+ padding: 0 0.938rem; 
+ margin: 0 auto; 
+ min-width: 37.5rem;
+ width: 300px;
+ text-align: center; 
+ padding-top: 280px;
+ color: white;
+}
+
+.register-button { 
+  width: 9.688rem;
+  background-color: #D81E5B;
+  border-color: #f15a29;
+  text-shadow: none;
+  border-style: none;
+  border-radius: 4px;
+  padding: 1rem 1.5rem;
+  color: white;
+  font-size: 1.125rem;
+}
+
+.register-button:hover {
+  background-color: #8f3985;
+  border-color: #cf3d0e;
+  cursor: pointer;
+}
+
+.signin-button { 
+  width: 9.688rem;
+  background-color: #D81E5B;
+  border-color: #f15a29;
+  text-shadow: none;
+  border-style: none;
+  border-radius: 4px;
+  padding: 1rem 1.5rem;
+  color: white;
+  font-size: 1.125rem;
+}
+
+.signin-button:hover { 
+  background-color: #8f3985;
+  border-color: #cf3d0e;
+  cursor: pointer;
+}
+
+.introduction-banner {
+  background-image: url('/images/butt.jpg');
+  background-repeat: no-repeat; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 600px;
+}
