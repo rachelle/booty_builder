@@ -29,6 +29,15 @@ gem 'bcrypt', '~> 3.1.7'
 # Materialize Sass
 gem 'materialize-sass'
 
+# therubyracer 
+gem 'therubyracer'
+
+# omniauth 
+gem 'omniauth'
+
+# omniauth-digitalocean 
+gem 'omniauth-digitalocean'
+
 # paperclip
 gem "paperclip", git: "git://github.com/thoughtbot/paperclip.git"
 
