@@ -30,7 +30,7 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'materialize-sass'
 
 # paperclip
-gem 'paperclip', '~> 4.3'
+gem "paperclip", git: "git://github.com/thoughtbot/paperclip.git"
 
 # Use Unicorn as the app server
 # gem 'unicorn'

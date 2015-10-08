@@ -32,11 +32,13 @@
         <%= f.password_field :password, :placeholder => "password confirmation", class: "sign-input" %> 
       </div> 
       <div class="col s12"> 
-        <%= f.file_field :avatar, :placeholder => "profile photo", class: 'avatar-input' %> 
+        <%= f.file_field :avatar, class: 'avatar-input' %> 
+
+         <%= f.submit "update", class: "edit-button" %> 
+    <% end %> 
       </div>
-      <%= f.submit "update", class: "edit-button" %> 
-    </div> 
-  <% end %> 
+     
+  </div> 
 </div> <!-- end of user edit form -->
 
 
