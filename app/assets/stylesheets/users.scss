@@ -195,7 +195,7 @@ a {
 
 /* personal navigation */
 #navBottom {
-  background-color: #EA0052;
+  background-color: #00AA99;
   
 }
 
@@ -285,4 +285,43 @@ a {
   background-color: rgba(0, 0, 0,0.6);
 }
 
+/* photo feed */
+.photo-feed {
+  margin: 0 auto;
+  padding: 5px;
+  clear: left;
+}
+
+.feed-links {
+  margin-left: 30px; 
+}
+
+.feed-box {
+  list-style: none; 
+  display: inline; 
+  position: relative; 
+  float: left; 
+  width: 200px; 
+  padding: 7px 0 25px 0; 
+  margin: 0; 
+  display: block;
+}
+
+.feed-box li {
+  list-style: none; 
+  display: inline; 
+  position: relative; 
+  float: left; 
+}
+
+.photo-wrapper {
+  position: relative; 
+  text-align: center; 
+  margin: 0 20px 10px; 
+}  
+
+.photo {
+  width: 300px; 
+  height: 300px; 
+}
 

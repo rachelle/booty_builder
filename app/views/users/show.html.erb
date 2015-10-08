@@ -38,7 +38,7 @@
 
 <!-- user photo feed -->
 <div class="photo-feed"> 
-  <h4 class="feed-text">Photo Feed</h4> 
+  <h4 class="feed-text center-align">Photo Feed</h4> 
   <ul id="feed-box"> 
     <% @user_photos.each do |photo| %> 
 
@@ -46,17 +46,15 @@
         <div class="photo-wrapper"> 
           <div class="photo"> 
             <%= link_to image_tag(photo.image.url(:medium)), photo_path(photo.id), class: "feed-links" %> 
-          </div> 
-          <div class="caption"> 
-            <%= photo.content %> 
-          </div> 
 
-        </div> 
+            <h6><%= photo.content %></h6> 
+          </div> 
+         </div> 
       </li> 
     <% end %>
   </ul> 
 </div>  
-</ul> 
+
 
 
 <!-- footer content -->
