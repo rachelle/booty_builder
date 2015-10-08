@@ -3,6 +3,7 @@
   <div class="nav-wrapper blue-grey darken-2">
     <a href="#" class="brand-logo brand-name">Booty Builder</a>
     <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li><%= link_to 'Home', user_path(current_user) %></li> 
       <li><%= link_to 'Explore', photos_path %></li>
       <li><%= link_to 'Search', users_path %></li>
       <li><%= link_to 'Sign Out', logout_path, method: :delete %></li>
@@ -25,34 +26,37 @@
 </div>
 <!-- end of user content -->
 
-<!-- photo feed -->
-<div class="photo-content"> 
-  <h4 class="feed-text">Photo Feed</h4> 
-  <ul id="feed-box"> 
-    <% @user_photos.each do |photo| %> 
-      <li> 
-        <div class="photo-wrapper"> 
-          <div class="photo"> 
-            <%= link_to image_tag(photo.image.url(:medium)), photo_path(photo.id), class: "feed-links" %> 
-          </div> 
-          <div class="text_bottom"><%= photo.content %></div> 
-        </div> 
-      </li>
-    <% end %> 
-  </ul> 
-</div> <!-- end of photo feed -->
-
-
 <!-- personal navigation for users -->
 <nav id="navBottom"> 
   <ul id="navTxtBottom"> 
     <li class="nav-links"><%= link_to 'edit profile', edit_user_path %></li> 
     <li class="nav-links"><%= link_to 'add photo', new_photo_path %></li> 
+
     <li class="nav-links"><%= link_to 'delete account', user_path(current_user), method: :delete, data: { confirm: 'Are you sure?'} %></li> 
   </ul> 
 </nav><!-- end of navigation-->
 
+<!-- user photo feed -->
+<div class="photo-feed"> 
+  <h4 class="feed-text">Photo Feed</h4> 
+  <ul id="feed-box"> 
+    <% @user_photos.each do |photo| %> 
 
+      <li>
+        <div class="photo-wrapper"> 
+          <div class="photo"> 
+            <%= link_to image_tag(photo.image.url(:medium)), photo_path(photo.id), class: "feed-links" %> 
+          </div> 
+          <div class="caption"> 
+            <%= photo.content %> 
+          </div> 
+
+        </div> 
+      </li> 
+    <% end %>
+  </ul> 
+</div>  
+</ul> 
 
 
 <!-- footer content -->
