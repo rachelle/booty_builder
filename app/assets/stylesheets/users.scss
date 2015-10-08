@@ -61,8 +61,6 @@
 /* user profile */
 @import url(http://fonts.googleapis.com/css?family=Quicksand:300,400|Lato:400,300|Coda|Open+Sans);
 
-
-
 a {
   text-decoration: none;
   color: #3498db;
@@ -194,4 +192,37 @@ a {
 .profile-user-page .data-user li a:hover span {
   color: #3498db; 
 }
+
+/* personal navigation */
+#navBottom {
+  background-color: #EA0052;
+  
+}
+
+#navBottom ul {
+  text-align: center; 
+}
+
+#navTxtBottom{
+  width: 100%; 
+  margin-left: 200px; 
+  display: block; 
+  list-style: none; 
+  text-decoration: none; 
+  text-align: center; 
+  margin-bottom: 20px;
+}
+
+#navTxtBottom li {
+  padding-left: 180px; 
+}
+
+#user-name {
+  color: white;
+}
+
+/* end of personal navigation */
+
+
+
 
