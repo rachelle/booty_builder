@@ -36,25 +36,24 @@
   </ul> 
 </nav><!-- end of navigation-->
 
-<!-- user photo feed -->
-<div class="photo-feed"> 
-  <h4 class="feed-text center-align">Photo Feed</h4> 
-  <ul id="feed-box"> 
+<!-- user feed  -->
+<div class="content">
+  <h4 class="feed-text center-align">Photo Feed</h4>
+  <ul id="feed-box">
     <% @user_photos.each do |photo| %> 
-
       <li>
-        <div class="photo-wrapper"> 
-          <div class="photo"> 
-            <%= link_to image_tag(photo.image.url(:medium)), photo_path(photo.id), class: "feed-links" %> 
+        <div class="photo-wrapper">
+          <div class="photo">
+            <%= link_to image_tag(photo.image.url(:medium)), photo_path(photo.id), class: "feed-links" %>
+            <%= photo.content %> 
+          </div>
+        </div>
+      </li>
+    <% end %> 
+  </ul>
+</div> <!-- end of user feed -->
 
-            <h6><%= photo.content %></h6> 
-          </div> 
-         </div> 
-      </li> 
-    <% end %>
-  </ul> 
-</div>  
-
+<div class="clear-fix"></div>
 
 
 <!-- footer content -->
