@@ -223,6 +223,48 @@ a {
 
 /* end of personal navigation */
 
+/* user edit page */
+#user-edit {
+  background: #FAFAFA;
+  border-bottom: 2px solid #C5C5C8;
+  border-radius: 5px;
+  text-align: center;
+  color: #36383C;
+  text-shadow: 0 1px 0 #FFF;
+  max-width: 400px;
+  margin-top: 30px;
+  margin-left: 120px;
+  padding: 15px 40px 20px 40px;
+  box-shadow: 0 0 3px #000;
+}
 
+#user-edit:before{
+  display: block;
+  width: 100px;
+  height: 4px;
+  background: #4E535B;
+  border-radius: 5px;
+  border-bottom: 1px solid #FFFFFF;
+  border-top: 2px solid #CBCBCD;
+  margin: 0 auto;
+}
+
+#user-edit input {
+  font-size: 1.2em;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-weight: 380;
+  color: black;
+  margin-top: 0;
+  margin-bottom: 30px;
+
+}
+
+.edit-button {
+  background-color: #00AA99;
+  width: 280px;
+  height: 50px;
+ 
+}
 
 
