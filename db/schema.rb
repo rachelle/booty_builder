@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151008030126) do
+ActiveRecord::Schema.define(version: 20151009054326) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -22,6 +22,52 @@ ActiveRecord::Schema.define(version: 20151008030126) do
     t.string   "photo_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "maxes", force: :cascade do |t|
+    t.integer  "max_id"
+    t.integer  "workout_id"
+    t.string   "name"
+    t.string   "description"
+    t.integer  "rep"
+    t.integer  "weight"
+    t.integer  "set"
+    t.string   "image"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  create_table "maximus", force: :cascade do |t|
+    t.integer  "workout_id"
+    t.integer  "maximus_id"
+    t.integer  "user_id"
+    t.string   "name"
+    t.string   "description"
+    t.string   "image"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  create_table "medius", force: :cascade do |t|
+    t.integer  "workout_id"
+    t.integer  "medius_id"
+    t.integer  "user_id"
+    t.string   "name"
+    t.string   "description"
+    t.string   "image"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
+
+  create_table "minimus", force: :cascade do |t|
+    t.integer  "workout_id"
+    t.integer  "minimuss_id"
+    t.integer  "user_id"
+    t.string   "name"
+    t.string   "description"
+    t.string   "image"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
   create_table "photos", force: :cascade do |t|

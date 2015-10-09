@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  max_id: 1
+  workout_id: 1
+  name: MyString
+  description: MyString
+  rep: 1
+  weight: 1
+  set: 1
+  image: MyString
+
+two:
+  max_id: 1
+  workout_id: 1
+  name: MyString
+  description: MyString
+  rep: 1
+  weight: 1
+  set: 1
+  image: MyString
