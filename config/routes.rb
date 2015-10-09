@@ -10,6 +10,9 @@ Rails.application.routes.draw do
     resources :sessions
     resources :users
     resources :workouts
+    resources :mins
+    resources :maxs
+    resources :meds
    
     resources :photos do 
       resources :comments
