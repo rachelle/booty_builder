@@ -1,0 +1,2 @@
+class MinsController < ApplicationController
+end
