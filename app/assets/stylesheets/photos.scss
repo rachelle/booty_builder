@@ -1,3 +1,30 @@
 // Place all the styles related to the photos controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.photo-form {
+  padding-left: 350px;
+}
+
+.photo-title {
+  text-align: center;
+}
+
+.photo-btn {
+  width: 200px; 
+  height: 40px;
+  background-color: #00AA99;
+  color: white;
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+.photo-ban {
+  width: 100%; 
+  height: 300px;
+}
+
+.photo-index {
+  width: 100%;
+  height: 320px;
+}

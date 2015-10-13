@@ -5,7 +5,7 @@ class MinsController < ApplicationController
   end 
 
   def new 
-    @min = Mins.new
+    @min = Min.new
   end
 
   def create 
