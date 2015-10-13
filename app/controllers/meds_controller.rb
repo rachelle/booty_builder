@@ -4,12 +4,8 @@ class MedsController < ApplicationController
     @meds = Med.all
   end 
 
-  def show
-    @med = Med.new
-  end
-
   def new
-    @med = current_user.meds.new
+    @med = Med.new
   end
 
   def create 
