@@ -1,5 +1,8 @@
 class User < ActiveRecord::Base
   has_many :photos
+  has_many :meds
+  has_many :maxs
+  has_many :mins
   has_secure_password
 
   validates :email, presence: true, uniqueness: true

@@ -14,25 +14,24 @@
 <div class="buttology"> 
   <h3>Glute Anatomy</h3> 
   <!-- imaage of glute anatomy -->
-  <img class="glute_info" src="/images/buttology.jpg"/>
+  <img src="/images/buttology.jpg"/>
 
   <div class="row"> 
     <h4>Choose body part</h4> 
+    
     <div class="col s4">
       <h5>Gluteus Medius</h5> 
-        <img class="anatomy" src=
-      "images/lunge.jpg"/> 
+        <%= link_to image_tag("/images/lunge.jpg", class: "anatomy"),  new_med_path%> 
     </div> 
 
     <div class="col s4">
       <h5>Gluteus Maximus</h5> 
-      <img class="anatomy" src="images/squat_home.jpg"/> 
+      <%= link_to image_tag("/images/squat_home.jpg", class: "anatomy"), new_max_path %> 
     </div> 
 
     <div class="col s4"> 
       <h5>Gluteus Minimus</h5> 
-      <img class="anatomy" src=
-    "images/hip_abductor.png"/>
+      <%= link_to image_tag("/images/hip_abductor.png", class: "anatomy"), new_min_path %>
     </div> 
 
   </div> 
